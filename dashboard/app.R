@@ -122,7 +122,7 @@ server <- function(input, output) {
         }
         
         top_table$total_sales <- format(top_table$total_sales,
-                                        digits = 0,
+                                        digits = NULL,
                                         big.mark = ",",
                                         scientific = FALSE)
         colnames(top_table) <- c("", "Sales (gold)")

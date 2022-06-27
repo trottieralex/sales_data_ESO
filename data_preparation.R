@@ -15,8 +15,7 @@ gsheet_trader$week_start <- as.Date(gsheet_trader$week_start)
 df <- read_csv("datasets/all_sales_AA.csv") %>%
     select(-"...1") %>%
     filter(week_start < (as.Date(Sys.time()) - 7)) # exclude current week (partial data)
-
-#df$week_start <- mdy(df$week_start) #Had formating issues recently... TO DELETE
+df
 
 
 
